@@ -12,10 +12,9 @@ class CashRegister
     quantity.times do 
       items << title
     end
-    if quantity!=1
-      @total += (price*quantity)
-    else
-      @total +=price
+    
+    @total += (price*quantity)
+    
     end
     @@items << title
   end
