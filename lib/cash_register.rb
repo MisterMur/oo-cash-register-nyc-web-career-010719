@@ -13,7 +13,7 @@ class CashRegister
       items << title
     end
     
-    total += (price*quantity)
+    self.total += (price*quantity)
     
     self.last_transaction = amount * quantity
   end
